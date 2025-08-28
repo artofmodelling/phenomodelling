@@ -12,9 +12,9 @@ FROM
   INNER JOIN
     GRID10KM gk on mok.IdGrid = gk.IDGRID
 WHERE
-  o.CropTypeCode ='BARW' and
-  o.PhenoStageCode in ('00','09','65','89') and
-  gk.GAES =1779 
+  o.CropTypeCode ='BARS' and
+  o.PhenoStageCode in ('00','09','65','89', '99') and
+  gk.GAES =1784
 order by
   o.objectid
 ;
